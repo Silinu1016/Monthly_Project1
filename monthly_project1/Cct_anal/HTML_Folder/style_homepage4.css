@@ -1,0 +1,147 @@
+div.top_bar{
+    width: 100vw;
+    height: 10vh;
+    position: relative;
+    background-color: #172334;
+    margin: 0;
+    background: #172334;
+}
+div.button_box
+{
+    background: transparent;
+    float:right;
+    font-family: NanumSquareRound;
+    margin: 0;
+}
+div.logo_box
+{
+    background: transparent;
+    line-height : 10vh;
+    font-size: 30px;
+    float:left;
+    font-family: NanumSquareRound;
+    margin: 0;
+}
+button.button1
+{
+    height : 10vh;
+    font-size:30px;
+    background: transparent;
+    font-family: NanumSquareRound;
+    border: none;
+    margin: 0;
+    filter: brightness(1);
+}
+.button1:hover {
+    filter: brightness(0.85);
+}
+div.homepage_box1{
+    position: relative;
+    text-align:center;
+    font-size:50px;
+    width: 100vw;
+    height: 90vh;
+    margin: 0;
+    background-color : #FFFFFF;
+    font-family: NanumSquareRound; 
+    align-items : center;
+}
+div.theory_bar{
+    float:left;
+    font-size:50px;
+    width: 20vw;
+    height: 90vh;
+    margin: 0;
+    background-color : #172334;
+    font-family: NanumSquareRound; 
+    align-items : center;
+}
+div.homepage_box2{
+    float:left;
+    width: 80vw;
+    height: 90vh;
+    margin: 0;
+    background-color : #FFFFFF;
+    font-family: NanumSquareRound; 
+    align-items : center;
+}
+div.EDA_box1{
+    text-align : left;
+    width: 80vw;
+    height: 10vh;
+    font-size:40px;
+    font-family: NanumSquareRound; 
+}
+div.EDA_Graph
+{
+    float:left;
+    text-align : left;
+    width: 80vw;
+    height: 30vh;
+    font-size:30px;
+}
+div.EDA_Graph1{
+    float:left;
+    width: 20vw;
+    height: 30vh;
+}
+div.EDA_Graph_blank
+{
+    float:left;
+    width: 3vw;
+    height: 30vh;
+}
+div.EDA_Graph2{
+    float:left;
+    width: 20vw;
+    height: 30vh;
+}
+div.EDA_Graph3{
+    float:left;
+    width: 20vw;
+    height: 30vh;
+}
+div.EDA_Graph3{
+    float:left;
+    width: 20vw;
+    height: 30vh;
+}
+div.EDA_blank{
+    background-color : transparent;
+    width: 80vw;
+    height: 2vh;
+}
+div.EDA_Anal{
+    float:left;
+    text-align:left;
+    width: 80vw;
+    height: 25vh;
+    font-size:30px;
+    background-color : transparent;
+    font-family: NanumSquareRound; 
+}
+div.EDA_Anal_blank{
+    background-color : transparent;
+    float:left;
+    width: 2vw;
+    height: 25vh;
+}
+div.EDA_Anal_text{
+    padding:10px 0px 0px 10px;
+    float:left;
+    text-align:left;
+    width: 74vw;
+    height: 14vh;
+    font-size:20px;
+    background-color : transparent;
+    font-family: NanumSquareRound;
+    border-radius: 5px;
+    border: 2px solid #DDDDDD;
+}
+img {
+    height: 25vh;
+    margin: 10px;
+}
+img:hover{
+    transform:scale(2);
+}

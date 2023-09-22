@@ -1,0 +1,144 @@
+div.top_bar{
+    width: 100vw;
+    height: 10vh;
+    position: relative;
+    background-color: #172334;
+    margin: 0;
+    background: #172334;
+}
+div.button_box
+{
+    background: transparent;
+    float:right;
+    font-family: NanumSquareRound;
+    margin: 0;
+}
+div.logo_box
+{
+    background: transparent;
+    line-height : 10vh;
+    font-size: 30px;
+    float:left;
+    font-family: NanumSquareRound;
+    margin: 0;
+}
+button.button1
+{
+    height : 10vh;
+    font-size:30px;
+    background: transparent;
+    font-family: NanumSquareRound;
+    border: none;
+    margin: 0;
+    filter: brightness(1);
+}
+.button1:hover {
+    filter: brightness(0.85);
+}
+div.homepage_box1{
+    float:left;
+    position: relative;
+    text-align:center;
+    width: 100vw;
+    height: 90vh;
+    margin: 0;
+    background-color : #FFFFFF;
+    font-family: NanumSquareRound; 
+    display: table-cell;
+    vertical-align: top;
+}
+div.data_bar{
+    margin: 0;
+    float:left;
+    width: 20vw;
+    height: 90vh;
+    font-family: NanumSquareRound; 
+    background-color: #172334;
+    font-size:50px;
+    align-items : center;
+}
+div.homepage_box2{
+    float:left;
+    width: 80vw;
+    height: 90vh;
+    margin: 0;
+    font-size:50px;
+    background-color : #FFFFFF;
+    font-family: NanumSquareRound; 
+    align-items : center;
+}
+div.homepage_blank{
+    background-color : transparent;
+    width: 80vw;
+    height: 2vh;
+    margin: 0;
+}
+div.purpose_box1{
+    margin: 0;
+    text-align : left;
+    width: 80vw;
+    height: 10vh;
+    font-size:40px;
+    font-family: NanumSquareRound; 
+    background-color : transparent;
+}
+div.purpose_blank{
+    margin: 0;
+    float:left;
+    background-color : transparent;
+    width: 2vw;
+    height: 2vh;
+}
+div.purpose_box2{
+    margin: 0;
+    padding:10px 0px 0px 10px;
+    float:left;
+    text-align:left;
+    width: 74vw;
+    height: 18vh;
+    font-size:20px;
+    background-color : transparent;
+    font-family: NanumSquareRound;
+    border-radius: 5px;
+    border: 2px solid #DDDDDD;
+}
+div.purpose_box3{
+    margin: 0;
+    padding:10px 0px 0px 10px;
+    float:left;
+    text-align:left;
+    width: 74vw;
+    height: 28vh;
+    font-size:20px;
+    background-color : transparent;
+    font-family: NanumSquareRound;
+    border-radius: 5px;
+    border: 2px solid #DDDDDD;
+}
+div.columns_box1{
+    margin: 0;
+    text-align : center;
+    float:left;
+    width: 45vw;
+    height: 65vh;
+    font-size:30px;
+    background-color : transparent;
+    font-family: NanumSquareRound; 
+}
+div.columns_box2{
+    margin: 0;
+    text-align : center;
+    float:left;
+    width: 35vw;
+    height: 65vh;
+    font-size:30px;
+    background-color : transparent;
+    font-family: NanumSquareRound; 
+}
+div.columns_blank{
+    margin: 0;
+    float:left;
+    background-color :transparent;
+    width: 35vw;
+    height: 5vh;
+}
