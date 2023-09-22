@@ -148,17 +148,19 @@ img:hover{
 div.checkbox1{
     float: left;
     text-align:left;
-    width: 15vw;
-    height: 70vh;
+    width: 20vw;
+    height: 60vh;
     font-size:30px;
+    line-height:2px
     font-family: NanumSquareRound; 
 }
 div.checkbox2{
     float: left;
     text-align:left;
-    width: 15vw;
-    height: 70vh;
+    width: 20vw;
+    height: 60vh;
     font-size:30px;
+    line-height:2px
     font-family: NanumSquareRound; 
 }
 button.button2
@@ -180,12 +182,12 @@ div.Graph{
     margin:0;
     float: left;
     text-align:center;
-    width: 50vw;
+    width: 35vw;
     height: 60vh;
 }
 img.Graph{
-    width: 40vw;
-    height: 55vh;
+    width: 35vw;
+    height: 50vh;
     margin: 10px;
 }
 img.Graph:hover{

@@ -31,13 +31,14 @@ def data_anal4(request):
     return render(request,'Homepage_4_4.html',{}) 
 
 def data_anal5(request):
-    C_L = ["Birth",    "Child",    "Educ",    "Inco",    "Marr",    "Rece",    "Teen"]
-    Co_L = ["Gold",    "Fruit",    "Meat",    "Fish",    "Snack",    "Wine"]
-    C_D = {"Birth":"Birthyear","Child":"Child","Educ":"Education","Inco":"Income","Marr":"Marry","Rece":"Recently","Teen":"Teen"}
+    C_L = ["출생연도", "교육 수준", "결혼 여부","소득",   "자녀(어린이) 여부",  "자녀(청소년) 여부",  "최근 구매일"]
+    Co_L = ["금",    "과일",    "고기",    "생선",    "과자",    "와인"]
+    C_D = {"출생연도":"Birthyear","자녀(어린이) 여부":"Child","교육 수준":"Education","소득":"Income","결혼 여부":"Marry","최근 구매일":"Recently","자녀(청소년) 여부":"Teen"}
+    Co_D = {"금":"Gold","과일":"Fruit","고기":"Meat","생선":"Fish","과자":"Snack","와인":"Wine"}
     List = []
     if request.method == 'POST':
         selected_Cus = request.POST.getlist('Cus_List')
         selected_Cun = request.POST.getlist('Cun_List')
         if len(selected_Cus)==1 and len(selected_Cun)==1:
-            List =  [C_D[selected_Cus[0]]+"_"+selected_Cun[0]]
+            List =  [C_D[selected_Cus[0]]+"_"+Co_D[selected_Cun[0]]]
     return render(request,'Homepage_4_5.html',{"C_L":C_L,"Co_L":Co_L,"List":List}) 

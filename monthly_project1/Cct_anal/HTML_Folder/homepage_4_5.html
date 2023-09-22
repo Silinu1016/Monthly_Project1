@@ -93,6 +93,8 @@
                 </div>
                 <div class = "EDA_blank"></div>
                 <div class = "EDA_blank"></div>
+                <div class = "EDA_blank"></div>
+                <div class = "EDA_blank"></div>
                 <form action="" method="post">{% csrf_token %}
                     <div class="checkbox1">
                     <span style="font-size:40px">&nbsp;&nbsp;&nbsp; 고객 유형</span>
@@ -100,7 +102,6 @@
                         <br>
                       {% for obj in C_L %}
                         &nbsp;&nbsp;&nbsp;&nbsp; <label><input id="Cus_List" type="checkbox" name="Cus_List" value="{{ obj }}" onclick="oneCheckbox1(this)">&nbsp;{{obj}}</label>
-                        <br>
                         <br>
                       {% endfor %}
                     </div>
@@ -111,9 +112,9 @@
                       {% for obj in Co_L %}
                        &nbsp;&nbsp;&nbsp;&nbsp;  <label><input id="Cun_List" type="checkbox" name="Cun_List" value="{{ obj }}" onclick="oneCheckbox2(this)">&nbsp;{{obj}}</label>
                         <br>
-                        <br>
                       {% endfor %}
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button  class = "button2" type="submit">그래프 만들기</button>
+                        <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button  class = "button2" type="submit">그래프 만들기</button>
                     </div>
                 </form>
                 <div class="Graph">
