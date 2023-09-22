@@ -9,6 +9,28 @@
                 margin: 0;
             }
         </style>
+        <script type="text/javascript">
+            function oneCheckbox1(a){
+                var obj = document.getElementsByName("Cus_List");
+                for(var i=0; i<obj.length; i++)
+                {
+                    if(obj[i] != a)
+                    {
+                        obj[i].checked = false;
+                    }
+                }
+            }
+            function oneCheckbox2(a){
+                var obj = document.getElementsByName("Cun_List");
+                for(var i=0; i<obj.length; i++)
+                {
+                    if(obj[i] != a)
+                    {
+                        obj[i].checked = false;
+                    }
+                }
+            }
+</script>
     </head>
 
     <body>
@@ -66,20 +88,41 @@
                 <div class = "EDA_blank"></div>
                 <div class = "EDA_blank"></div>
                 <div class = "EDA_box1">
-                    &nbsp;&nbsp;☉ <b>그래프 그리기</b>
+                    &nbsp;&nbsp;☉ <b>그래프 그리기</b><br>
+                    &nbsp;&nbsp;&nbsp; <span style="font-size:30px">고객 유형과 소비 유형에서 각각 하나씩 체크 후 그래프 만들기 버튼을 눌러주세요.</span>
                 </div>
                 <div class = "EDA_blank"></div>
                 <div class = "EDA_blank"></div>
                 <form action="" method="post">{% csrf_token %}
+                    <div class="checkbox1">
+                    <span style="font-size:40px">&nbsp;&nbsp;&nbsp; 고객 유형</span>
+                        <br>
+                        <br>
                       {% for obj in C_L %}
-                        <input id="Cus_List" type="checkbox" name="Cus_List" value="{{ obj }}">
+                        &nbsp;&nbsp;&nbsp;&nbsp; <label><input id="Cus_List" type="checkbox" name="Cus_List" value="{{ obj }}" onclick="oneCheckbox1(this)">&nbsp;{{obj}}</label>
+                        <br>
+                        <br>
                       {% endfor %}
-                    <br>
+                    </div>
+                    <div class="checkbox2">
+                    <span style="font-size:40px">&nbsp;&nbsp;&nbsp; 소비 유형</span>
+                        <br>
+                        <br>
                       {% for obj in Co_L %}
-                        <input id="Cun_List" type="checkbox" name="Cun_List" value="{{ obj }}">
+                       &nbsp;&nbsp;&nbsp;&nbsp;  <label><input id="Cun_List" type="checkbox" name="Cun_List" value="{{ obj }}" onclick="oneCheckbox2(this)">&nbsp;{{obj}}</label>
+                        <br>
+                        <br>
                       {% endfor %}
-                      <button type="submit">저장</button>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button  class = "button2" type="submit">그래프 만들기</button>
+                    </div>
                 </form>
+                <div class="Graph">
+                    {% if List %}
+                        {% for i in List %}
+                            <img class="Graph" src= "{% get_static_prefix %}IMG_Folder/{{i}}.png">
+                        {% endfor %}
+                    {% endif %}
+                </div>
             </div>
         </div>
     </body>

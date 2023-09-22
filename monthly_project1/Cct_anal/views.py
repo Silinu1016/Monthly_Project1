@@ -33,8 +33,11 @@ def data_anal4(request):
 def data_anal5(request):
     C_L = ["Birth",    "Child",    "Educ",    "Inco",    "Marr",    "Rece",    "Teen"]
     Co_L = ["Gold",    "Fruit",    "Meat",    "Fish",    "Snack",    "Wine"]
+    C_D = {"Birth":"Birthyear","Child":"Child","Educ":"Education","Inco":"Income","Marr":"Marry","Rece":"Recently","Teen":"Teen"}
+    List = []
     if request.method == 'POST':
         selected_Cus = request.POST.getlist('Cus_List')
         selected_Cun = request.POST.getlist('Cun_List')
-        print(selected_Cus,selected_Cun)
-    return render(request,'Homepage_4_5.html',{"C_L":C_L,"Co_L":Co_L}) 
+        if len(selected_Cus)==1 and len(selected_Cun)==1:
+            List =  [C_D[selected_Cus[0]]+"_"+selected_Cun[0]]
+    return render(request,'Homepage_4_5.html',{"C_L":C_L,"Co_L":Co_L,"List":List}) 
