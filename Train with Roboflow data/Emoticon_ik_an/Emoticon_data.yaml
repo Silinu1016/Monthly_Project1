@@ -1,0 +1,7 @@
+names:
+- -anonymous_ikm
+- -ompang
+nc: 2
+test: "C:\\Users\\USER\\Desktop\\\uC218\\Yolo\\Emoticon_ik_an\\test\\images"
+train: "C:\\Users\\USER\\Desktop\\\uC218\\Yolo\\Emoticon_ik_an\\train\\images"
+val: "C:\\Users\\USER\\Desktop\\\uC218\\Yolo\\Emoticon_ik_an\\valid\\images"

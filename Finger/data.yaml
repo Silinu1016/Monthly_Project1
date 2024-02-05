@@ -1,0 +1,10 @@
+names:
+- Finger_0
+- Finger_1
+- Finger_2
+- Finger_3
+- Finger_4
+- Finger_5
+nc: 6
+train: "C:\\Users\\USER\\Desktop\\\uC218\\Yolo\\\uC815\uB9AC\\train\\images"
+val: "C:\\Users\\USER\\Desktop\\\uC218\\Yolo\\\uC815\uB9AC\\valid\\images"

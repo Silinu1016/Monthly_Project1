@@ -1,0 +1,10 @@
+names:
+- Ambulance
+- Bus
+- Car
+- Motorcycle
+- Truck
+nc: 5
+test: "C:\\Users\\USER\\Desktop\\\uC218\\Yolo\\Emoticon_ik_an\\test\\images"
+train: "C:\\Users\\USER\\Desktop\\\uC218\\Yolo\\Emoticon_ik_an\\train\\images"
+val: "C:\\Users\\USER\\Desktop\\\uC218\\Yolo\\Emoticon_ik_an\\valid\\images"
