@@ -11,8 +11,9 @@
 2. 의류 종류와 사람을 인식하지 못한 경우나 사람만 인식한 경우 관련 없음으로 분류함
 3. 의류 종류나 의류 종류와 사람을 둘 다 인식했다면 인식한 의류 종류의 bbox 부분만 Crop함
 4. Crop된 이미지의 크기만큼 해당 상품 이미지 크기를 조절함
-5. Crop된 이미지를 Embedding 한 값과, 크기 조절된 해당 상품 이미지를 Embedding 한 값끼리 Cosine similarity를 비교함
-6. Cosine similarity가 0.55 이상이라면 단순 상품 사진 혹은 착용 사진으로 분류되며, 그렇지 않은 경우 관련 없음으로 분류함
+5. Crop된 이미지와 크기 조절된 해당 상품 이미지를 각각 ResNet 모델로 Embedding 함
+6. Crop된 이미지를 Embedding 한 값과, 크기 조절된 해당 상품 이미지를 Embedding 한 값을 Cosine similarity를 비교함
+7. Cosine similarity가 0.55 이상이라면 단순 상품 사진 혹은 착용 사진으로 분류되며, 그렇지 않은 경우 관련 없음으로 분류함
    * 3~6번은 프로젝트 종료 이후에 개별적으로 진행함
 
 ## Data
@@ -92,13 +93,13 @@
       <img src="https://github.com/Silinu1016/Project/assets/97217295/a82ecead-1a0e-4f74-8a69-a20ba1bcae2e" width="400" height="280">
   * **Category of clothes and human detection accuracy with YOLOv8m, C data and conf=0.45**
     ![image](https://github.com/Silinu1016/Project/assets/97217295/5feb44be-8d62-4221-8216-12fb060a51ab)
-* **Cosine similarity로 비교한 후의 성능(3~6단계를 거침)**
+* **Cosine similarity로 비교한 후의 성능(3~6단계를 거침)** <br>
+    <img src="https://github.com/Silinu1016/Project/assets/97217295/3826c0c7-354f-4990-9c93-6311d341ac2c" width="420" height="240">
   * 이전과 비교했을 때, 상의, 아우터의 경우 2%, 바지의 경우 4%가 떨어짐
   * 왜냐하면 옷이 일치하더라도 상품의 색과 리뷰 사진의 의류 색이 다르면 유사도가 낮아지기 때문임
     * 색상을 여러 개로 옵션으로 둔 상품에는 여러 색상의 리뷰 사진이 올라오지만, 현재는 한 색상의 대표 사진만 가져와서 비교함
   * 현재는 하나의 상품의 색만 가져와서 비교했지만, 플랫폼쪽에서 색상이 같은 옷과 비교할 수 있도록 설계한다면 성능이 더 올라갈 것으로 보임
-  * Else의 경우 90.2%에서 97.1%까지 총 6.9%의 성능을 끌어올림 <br>
-    <img src="https://github.com/Silinu1016/Project/assets/97217295/3826c0c7-354f-4990-9c93-6311d341ac2c" width="420" height="240">
+  * Else의 경우 90.2%에서 97.1%까지 총 6.9%의 성능을 끌어올림
 
 ## Link
 * **발표 영상**
