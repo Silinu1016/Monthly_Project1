@@ -57,7 +57,7 @@
 
 * **Train Dataset Pre-processing**
   * 이미지 라벨링
-    * python ImgLabel.py 사용함
+    * python labelImg.py 사용함
   * 크기
     * (256, 256) 사이즈로 크기 조정함
   * 처리
