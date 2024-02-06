@@ -3,6 +3,7 @@
   * Jetson TX2의 내장 카메라를 사용하여 엘리베이터 문 상태가 열려있으면 인사하는 시스템임
   * 이 코드는 엘리베이터 문이 열렸는지 닫혔는지 판단하는 부분임  
 
+
 ## Data
 * **Collection**
   * 엘리베이터가 보이는 위치에 노트북 카메라로 1초마다 한 번씩 촬영하여 저장함
@@ -28,15 +29,16 @@
     * 아래 그림은 기존 이미지, 흑백, 색반전, 모자이크 순임
   ![image](https://github.com/Silinu1016/Project/assets/97217295/2d7fc411-5d75-46e4-ae99-f31203afcc73)
 
+
 ## Model
 * **Train Model**
-  * YOLOv3 Fine-Tuning
+  * YOLOv3-Tiny Fine-Tuning
 
 * **Hyperparameter**
   * Epoch: 100
   * Learning rate: 0.001
   * Batch size: 64
-  
+
 
 ## Performance
 * **Architecture**
