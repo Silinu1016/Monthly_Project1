@@ -18,7 +18,7 @@
 
 ## Data
 * **Dataset**
-  * **Crawling**
+  * **Crawling**[[Link]](https://github.com/Silinu1016/Project/blob/main/Photo%20Review%20Quality%20Evaluation/1.%20image%20%ED%95%A9%EC%B9%98%EA%B8%B0.ipynb) [[Link]](https://github.com/Silinu1016/Project/blob/main/Photo%20Review%20Quality%20Evaluation/2.%20Make%20data%20with%20crawling%20data.ipynb)
     * 무신사 홈페이지 내에서 상품 및 리뷰 이미지를 크롤링 함
     * 의류 종류 별로 상품을 50~150개의 리스트로 만들어서 저장함
       * 의류 종류: {"상의", "아우터", "바지", "원피스", "스커트"}
@@ -26,7 +26,7 @@
       * 원피스는 50개의 상품을 가져옴
       * 스커트는 100개의 상품을 가져옴
      * 각 상품 별 단순 상품 사진 최대 10장, 착용 사진 최대 10장의 사진 리뷰를 가져옴
-  * **Kaggle fashion dataset**
+  * **Kaggle fashion dataset**[[Link]](https://github.com/Silinu1016/Project/blob/main/Photo%20Review%20Quality%20Evaluation/3.%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%A6%9D%EA%B0%95%ED%95%98%EA%B8%B0%20with%20fashion%20dataset.ipynb)
     * Crawling Data 중 원피스 데이터가 적어, 이를 보충하기 위함
     * 라벨 값으로 원피스가 있는 데이터만 수집함
     * 아래 링크에서 다운 받을 수 있음
@@ -60,7 +60,7 @@
     * python labelImg.py 사용함
   * 크기
     * (256, 256) 사이즈로 크기 조정함
-  * 처리
+  * 처리[[Link]](https://github.com/Silinu1016/Project/blob/main/Photo%20Review%20Quality%20Evaluation/4.%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%A6%9D%EA%B0%95%ED%95%98%EA%B8%B0%20with%20blur%20and%20gray.ipynb)
     * 색반전, 모자이크, 흑백 처리를 하여 학습 이미지 수를 늘림
     * 아래 그림은 기존 이미지, 색반전, 모자이크, 흑백 순임
       ![image](https://github.com/Silinu1016/Project/assets/97217295/ab4c0184-4aae-4431-a9ce-be2c622ff1c6)
@@ -80,7 +80,7 @@
   * Image size: 256
 
 
-## Performance
+## Performance[[Link]](https://github.com/Silinu1016/Project/blob/main/Photo%20Review%20Quality%20Evaluation/5.%20Yolo%20%ED%95%99%EC%8A%B5%20with%20crawling%20data.ipynb)
 * **의류 종류와 사람을 인식했을 때의 성능(1~2단계만 거침)**
   * **Accuracy by each training dataset**
     * C data로 했을 때 가장 성능이 좋음 <br> 
@@ -93,13 +93,16 @@
       <img src="https://github.com/Silinu1016/Project/assets/97217295/a82ecead-1a0e-4f74-8a69-a20ba1bcae2e" width="400" height="280">
   * **Category of clothes and human detection accuracy with YOLOv8m, C data and conf=0.45**
     ![image](https://github.com/Silinu1016/Project/assets/97217295/5feb44be-8d62-4221-8216-12fb060a51ab)
-* **Cosine similarity로 비교한 후의 성능(3~6단계를 거침)** <br>
+* **Cosine similarity로 비교한 후의 성능(3~6단계를 거침)[[Link]](https://github.com/Silinu1016/Project/blob/main/Photo%20Review%20Quality%20Evaluation/6.%20Cosine%20Similarity%20%EB%B9%84%EA%B5%90%20%EB%B0%8F%20%ED%8C%90%EB%8B%A8.ipynb)** <br>
     <img src="https://github.com/Silinu1016/Project/assets/97217295/3826c0c7-354f-4990-9c93-6311d341ac2c" width="420" height="240">
   * 이전과 비교했을 때, 상의, 아우터의 경우 2%, 바지의 경우 4%가 떨어짐
   * 왜냐하면 옷이 일치하더라도 상품의 색과 리뷰 사진의 의류 색이 다르면 유사도가 낮아지기 때문임
     * 색상을 여러 개로 옵션으로 둔 상품에는 여러 색상의 리뷰 사진이 올라오지만, 현재는 한 색상의 대표 사진만 가져와서 비교함
   * 현재는 하나의 상품의 색만 가져와서 비교했지만, 플랫폼쪽에서 색상이 같은 옷과 비교할 수 있도록 설계한다면 성능이 더 올라갈 것으로 보임
   * Else의 경우 90.2%에서 97.1%까지 총 6.9%의 성능을 끌어올림
+
+## ONNX[[Link]](https://github.com/Silinu1016/Project/blob/main/Photo%20Review%20Quality%20Evaluation/7.%20Yolo%20model%20export%20and%20test%20with%20ONNX.ipynb)
+* 안드로이드에 모델을 탑재하기 위해 ONNX로 변환함
 
 ## Link
 * **발표 영상**
