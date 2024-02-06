@@ -7,7 +7,7 @@
   
 
 # [Programmers AI Dev-Course] Final Project
-* Clothes and Human Detection
+* Photo Review Quality Evaluation
 
 
 # [광주전남지역혁신플랫폼] Project
