@@ -11,8 +11,9 @@
 2. 의류 종류와 사람을 인식하지 못한 경우나 사람만 인식한 경우 관련 없음으로 분류함
 3. 의류 종류나 의류 종류와 사람을 둘 다 인식했다면 인식한 의류 종류의 bbox 부분만 Crop함
 4. Crop된 이미지의 크기만큼 해당 상품 이미지 크기를 조절함
-5. Crop된 이미지를 Embedding 한 값과, 크기 조절된 해당 상품 이미지를 Embedding 한 값끼리 Cosine similarity를 비교함
-6. Cosine similarity가 0.55 이상이라면 단순 상품 사진 혹은 착용 사진으로 분류되며, 그렇지 않은 경우 관련 없음으로 분류함
+5. Crop된 이미지와 크기 조절된 해당 상품 이미지를 각각 ResNet 모델로 Embedding 함
+6. Crop된 이미지를 Embedding 한 값과, 크기 조절된 해당 상품 이미지를 Embedding 한 값을 Cosine similarity를 비교함
+7. Cosine similarity가 0.55 이상이라면 단순 상품 사진 혹은 착용 사진으로 분류되며, 그렇지 않은 경우 관련 없음으로 분류함
    * 3~6번은 프로젝트 종료 이후에 개별적으로 진행함
 
 ## Data
