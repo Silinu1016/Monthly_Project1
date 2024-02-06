@@ -20,7 +20,7 @@
 
 * **Pre-processing**
   * 이미지 라벨링
-    * python ImgLabel.py 사용함
+    * python labelImg.py 사용함
   * 크기
     * 원본, 엘리베이터 작게 확대한 이미지, 엘리베이터 크게 확대한 이미지
     * 크기에 따라 이미지 라벨링 값을 재정의 함
