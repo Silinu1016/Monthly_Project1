@@ -50,6 +50,6 @@
   * 엘리베이터의 상태를 정확하게 인식한 이미지는 33개로 94% 이상의 정확도를 보임
     ![image](https://github.com/Silinu1016/Project/assets/97217295/a91b5a8c-11b0-4df9-aab0-3840c5bf3496)
 * **TX2 Test**
-  * 실시간으로 촬영하였을 때, 95% 이상의 정확도를 보임
+  * 실시간으로 촬영(2[frame/s])하였을 때, 95% 이상의 정확도를 보임
     ![image](https://github.com/Silinu1016/Project/assets/97217295/3eec4693-1684-4b8b-8b56-d06613e399b6)
 
