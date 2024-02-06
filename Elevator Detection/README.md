@@ -1,4 +1,4 @@
-# Elebator Detection
+# Elevator Detection
 ## Description
   * Jetson TX2의 내장 카메라를 사용하여 엘리베이터 문 상태가 열려있으면 인사하는 시스템임
   * 이 코드는 엘리베이터 문이 열렸는지 닫혔는지 판단하는 부분임  
