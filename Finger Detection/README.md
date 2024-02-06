@@ -4,7 +4,7 @@
   * YOLOv8 모델을 커스터마이징한 데이터로 학습해보기 위함
 
 ## Data
-* **Collection**
+* **Collection**[[Link]](https://github.com/Silinu1016/Project/blob/main/Finger%20Detection/1.%20webcam%EC%9C%BC%EB%A1%9C%20%EC%9E%90%EB%A3%8C%20%EC%88%98%EC%A7%91.ipynb)
   * 손이 보이는 위치에 웹캠으로 1[ms]마다 한 번씩 촬영하여 저장함
     
 * **Dataset**
@@ -14,13 +14,13 @@
   * Finger_0, Finger_1, Finger_2, Finger_3, Finger_4, Finger_5
 
 * **Pre-processing**
-  * 이미지 라벨링
+  * 이미지 라벨링[[Link]](https://github.com/Silinu1016/Project/blob/main/Finger%20Detection/2.%20image%20labeling.ipynb)
     * python labelImg.py 사용함
-  * 크기
+  * 크기[[Link]](https://github.com/Silinu1016/Project/blob/main/Finger%20Detection/3.%20Image%20preprocessing%20%EB%B0%8F%20train%2C%20val%20%EB%82%98%EB%88%84%EA%B8%B0.ipynb)
     * (416, 416) 크기로 조정함
 
 
-## Model
+## Model[[Link]](https://github.com/Silinu1016/Project/blob/main/Finger%20Detection/4.%20Custom%20Data%20Training%20and%20Predict.ipynb)
 * **Train Model**
   * YOLOv8 Fine-Tuning
 
@@ -30,7 +30,7 @@
   * Image size: 416
 
 
-## Performance
+## Performance[[Link]](https://github.com/Silinu1016/Project/blob/main/Finger%20Detection/5.%20Load%20weights%20and%20test%20with%20webcam.ipynb)
 * **Image Test**
   * 22개의 이미지 데이터
     * 휴대폰으로 촬영한 사진임
