@@ -15,4 +15,4 @@
 
 
 # [기타] Project
-* Finger Project
+* Finger Detection
