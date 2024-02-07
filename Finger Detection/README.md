@@ -38,7 +38,7 @@
     * 데이터를 가공하여 증강을 한다면 더 잘 맞출 수 있을 것이라 예상함
     * 모든 모델이 속도 측면에서 20ms 이내로 빠른 시간 내에 예측하는 것을 확인함
     
-* **TX2 Test**
+* **WebCam Test**
   * 실시간으로 촬영(100[frame/s])하였을 때, 80% 이상의 정확도를 보임 <br>
     ![croped_test_with_webcam](https://github.com/Silinu1016/Project/assets/97217295/396c6204-fc12-47dc-aff0-068c1346e179)
 
