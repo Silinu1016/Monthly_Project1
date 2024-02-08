@@ -18,8 +18,8 @@
 
 ## Data
 * **Dataset**
-  * **Crawling**[[Link]](https://github.com/Silinu1016/Project/blob/main/Photo%20Review%20Quality%20Evaluation/1.%20image%20%ED%95%A9%EC%B9%98%EA%B8%B0.ipynb) [[Link]](https://github.com/Silinu1016/Project/blob/main/Photo%20Review%20Quality%20Evaluation/2.%20Make%20data%20with%20crawling%20data.ipynb)
-    * 무신사 홈페이지 내에서 상품 및 리뷰 이미지를 크롤링 함
+  * **Collection**[[Link]](https://github.com/Silinu1016/Project/blob/main/Photo%20Review%20Quality%20Evaluation/1.%20image%20%ED%95%A9%EC%B9%98%EA%B8%B0.ipynb) [[Link]](https://github.com/Silinu1016/Project/blob/main/Photo%20Review%20Quality%20Evaluation/2.%20Make%20data%20with%20crawling%20data.ipynb)
+    * 한 의류 플랫폼 내에서 상품 및 리뷰 이미지를 수집함
     * 의류 종류 별로 상품을 50~150개의 리스트로 만들어서 저장함
       * 의류 종류: {"상의", "아우터", "바지", "원피스", "스커트"}
       * 상의, 아우터, 바지는 150개의 상품을 가져옴
@@ -27,7 +27,7 @@
       * 스커트는 100개의 상품을 가져옴
      * 각 상품 별 단순 상품 사진 최대 10장, 착용 사진 최대 10장의 사진 리뷰를 가져옴
   * **Kaggle fashion dataset**[[Link]](https://github.com/Silinu1016/Project/blob/main/Photo%20Review%20Quality%20Evaluation/3.%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%A6%9D%EA%B0%95%ED%95%98%EA%B8%B0%20with%20fashion%20dataset.ipynb)
-    * Crawling Data 중 원피스 데이터가 적어, 이를 보충하기 위함
+    * 위 수집 데이터 중 원피스 데이터가 적어, 이를 보충하기 위함
     * 라벨 값으로 원피스가 있는 데이터만 수집함
     * 아래 링크에서 다운 받을 수 있음
       * https://www.kaggle.com/datasets/nguyngiabol/colorful-fashion-dataset-for-object-detection?resource=download
@@ -40,14 +40,14 @@
   * Top, Outer, Pants, Onepiece, Skirt, Human
 
 * **Train Dataset**
-  * Crawling 데이터 중 총 9,789장 활용함
+  * Collection 데이터 중 총 9,789장 활용함
     * Top, Outer, Pants의 상품을 140개씩 가져옴
     * Onepiece의 상품을 45개 가져옴
     * Skirt의 상품을 95개 가져옴
   * Kaggle fashion dataset 원피스 이미지를 678장 활용함
 
 * **Test Dataset**
-  * Crawling 데이터 중 총 800장 활용함
+  * Collection 데이터 중 총 800장 활용함
     * Top, Outer, Pants의 상품을 10개씩 가져옴
       * 각각 200장의 사진 리뷰를 가져옴
     * Onepiece, Skirt의 상품을 5개씩 가져옴
