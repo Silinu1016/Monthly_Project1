@@ -109,3 +109,4 @@
   * https://www.youtube.com/watch?v=I_bnnTaOqTg
 * **Blog**
   * https://silinu-ai.tistory.com/45
+  * https://silinu-ai.tistory.com/46
